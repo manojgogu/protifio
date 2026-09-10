@@ -1,0 +1,96 @@
+:root {
+  --bg: #020817;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --surface-soft: rgba(148, 163, 184, 0.08);
+  --surface-card: rgba(15, 23, 42, 0.72);
+  --border: rgba(148, 163, 184, 0.14);
+  font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body[data-theme='light'] {
+  --bg: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --surface-soft: rgba(148, 163, 184, 0.08);
+  --surface-card: rgba(255, 255, 255, 0.9);
+  --border: rgba(15, 23, 42, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), transparent 24%),
+    radial-gradient(circle at right, rgba(139, 92, 246, 0.12), transparent 26%),
+    var(--bg);
+  color: var(--text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+body[data-theme='light'] .project-card,
+body[data-theme='light'] .skill-card,
+body[data-theme='light'] .achievement-card,
+body[data-theme='light'] .certificate-card,
+body[data-theme='light'] .contact-form,
+body[data-theme='light'] .timeline-card,
+body[data-theme='light'] .coding-box,
+body[data-theme='light'] .resume-box {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+body[data-theme='light'] .project-card.feature,
+body[data-theme='light'] .certificate-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.94));
+}
+
+body[data-theme='light'] .flow-diagram,
+body[data-theme='light'] .highlight-card,
+body[data-theme='light'] .tech-stack span,
+body[data-theme='light'] .skill-pill,
+body[data-theme='light'] .contact-form input,
+body[data-theme='light'] .contact-form textarea,
+body[data-theme='light'] .hero-tags span {
+  background: rgba(148, 163, 184, 0.06);
+}
