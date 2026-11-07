@@ -4,10 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>protifio</title>
+    <meta
+      name="description"
+      content="Manoj Gogu — Computer Science Engineering student, Full Stack Developer, Java Developer, and aspiring Software Engineer. Building digital experiences through code."
+    />
+    <meta name="author" content="Manoj Gogu" />
+    <meta name="theme-color" content="#05060b" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Manoj Gogu — Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Premium portfolio of Manoj Gogu — building digital experiences through code."
+    />
+    <title>Manoj Gogu — Full Stack Developer &amp; CSE Student</title>
+
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('theme')
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          storedTheme = window.matchMedia('(prefers-color-scheme: light)').matches
+            ? 'light'
+            : 'dark'
+        }
+        document.documentElement.dataset.theme = storedTheme
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>
+    <noscript>This portfolio needs JavaScript enabled to display properly.</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
